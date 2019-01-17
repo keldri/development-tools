@@ -1,0 +1,418 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linux Cheatsheet · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="grep-cheatsheet.html" />
+    
+    
+    <link rel="prev" href="README.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="README.md">
+            
+                <span>
+            
+                    
+                    Command Line
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="linux-cheatsheet.html">
+            
+                <a href="linux-cheatsheet.html">
+            
+                    
+                    Linux Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="grep-cheatsheet.html">
+            
+                <a href="grep-cheatsheet.html">
+            
+                    
+                    Grep Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../magento/README.md">
+            
+                <span>
+            
+                    
+                    Magento
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    [Migrations(magento/migrations.md)
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Linux Cheatsheet</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="linux">Linux</h1>
+<p><a href="https://ryanstutorials.net/linuxtutorial/cheatsheet.php" target="_blank">https://ryanstutorials.net/linuxtutorial/cheatsheet.php</a></p>
+<ul>
+<li><p>Basic Navigation</p>
+<pre><code>  pwd
+  : Where am I in the system.
+
+  ls [path]: Perform a listing of the given path or your current directory.
+  Common options: -l, -h, -a
+
+  cd [path]: Change into the given path or into your home directory.
+
+  Path: A description of where a file or directory is on the filesystem.
+  Absolute Path: One beginning from the root of the file system (eg. /etc/sysconfig ).
+
+  Relative Path: One relative to where you currently are in the system (eg. Documents/music ).
+
+  ~ (tilde): Used in paths as a reference to your home directory (eg. ~/Documents ).
+
+  . (dot): Used in paths as a reference to your current directory (eg. ./bin ).
+
+  .. (dot dot): Used in paths as a reference to your current directories parent directory (eg. ../bin ).
+
+  TAB completion: Start typing and press TAB. The system will auto complete the path. Press TAB twice and it will show you your alternatives.
+</code></pre></li>
+</ul>
+<hr>
+<ul>
+<li><p>Permissions</p>
+<pre><code>  ## Permissions
+  r (read)
+  w (write)
+  x (execute)
+
+  ## Users
+  Owner or User, Group and Others
+
+  ls -l [path]: View the permissions of a file or all items in a directory.
+
+  chmod &lt;permissions&gt; &lt;path&gt;: Change permissions. Permissions can be either shorthand (eg. 754) or longhand (eg. g+x).
+</code></pre></li>
+</ul>
+<hr>
+<ul>
+<li><p>Processes</p>
+<pre><code>  CTRL + C: Cancel the currently running process.
+
+  kill &lt;process id&gt;: Cancel the given process.
+  Include the option -9 to kill a stubborn process.
+
+  ps : Obtain a listing of processes and their id&apos;s.
+  Including the option aux will show all processes.
+
+  CTRL + Z: Pause the currently running process and put it in the background.
+
+  jobs : See a list of current processes in the background.
+
+  fg &lt;job number&gt; : Move the given process from the background to the foreground
+</code></pre></li>
+</ul>
+<hr>
+<ul>
+<li><p>Filters</p>
+<pre><code>  head : Show the first n lines.
+  tail : Show the last n lines.
+  sort : Sort lines in a given way.
+  wc : How many words, characters and lines.
+</code></pre></li>
+</ul>
+<hr>
+<ul>
+<li><p>Useful Commands</p>
+<pre><code>  du -sh ./* : Find the size of every directory in your current directory.
+  df -h:  Display how much disk space is used and also free
+</code></pre></li>
+</ul>
+<hr>
+<ul>
+<li><p>Creating / Copying / Moving</p>
+<pre><code>  mkdir &lt;directory name&gt; : Create a directory
+
+  rmdir &lt;directory name&gt;: Remove a directory (only if empty).
+
+  touch &lt;file name&gt; : Create a blank file.
+
+  cp &lt;source&gt; &lt;destination&gt; : Copy the source file to the destination.
+
+  mv &lt;source&gt; &lt;destination&gt;: Move the source file to the destination.
+  May also be used to rename files or directories.
+
+  rm &lt;path&gt;: Remove a file or directory.Common options: -r -f
+</code></pre></li>
+</ul>
+<hr>
+<ul>
+<li><p>Piping and Redirection</p>
+<pre><code>  &gt; : Redirect STDOUT to a file.
+
+  &gt;&gt; : Append STDOUT to the end of a file.
+
+  2&gt; : Redirect the STDERR to a file.
+
+  &lt; : Pass the contents of a file to a program as STDIN.
+
+  | : Feed the STDOUT of the program on the left as STDIN to the program on the right.
+</code></pre></li>
+</ul>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="README.md" class="navigation navigation-prev " aria-label="Previous page: Command Line">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="grep-cheatsheet.html" class="navigation navigation-next " aria-label="Next page: Grep Cheatsheet">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux Cheatsheet","level":"1.2.1","depth":2,"next":{"title":"Grep Cheatsheet","level":"1.2.2","depth":2,"path":"commandLine/grep-cheatsheet.md","ref":"commandLine/grep-cheatsheet.md","articles":[]},"previous":{"title":"Command Line","level":"1.2","depth":1,"path":"commandLine/README.md","ref":"commandLine/README.md","articles":[{"title":"Linux Cheatsheet","level":"1.2.1","depth":2,"path":"commandLine/linux-cheatsheet.md","ref":"commandLine/linux-cheatsheet.md","articles":[]},{"title":"Grep Cheatsheet","level":"1.2.2","depth":2,"path":"commandLine/grep-cheatsheet.md","ref":"commandLine/grep-cheatsheet.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"commandLine/linux-cheatsheet.md","mtime":"2019-01-17T15:44:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-17T16:25:48.486Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
