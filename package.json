@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kate Eldridge",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
 }
