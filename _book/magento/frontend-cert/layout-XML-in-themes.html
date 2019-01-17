@@ -1,0 +1,615 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Layout XML in Themes · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="design-configuration-system.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../commandLine/">
+            
+                <a href="../../commandLine/">
+            
+                    
+                    Command Line
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../commandLine/linux-cheatsheet.html">
+            
+                <a href="../../commandLine/linux-cheatsheet.html">
+            
+                    
+                    Linux Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../commandLine/grep-cheatsheet.html">
+            
+                <a href="../../commandLine/grep-cheatsheet.html">
+            
+                    
+                    Grep Cheatsheet
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Magento
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../migrations.html">
+            
+                <a href="../migrations.html">
+            
+                    
+                    Migrations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Frontend Certification Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="create-themes.html">
+            
+                <a href="create-themes.html">
+            
+                    
+                    Create Themes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="design-configuration-system.html">
+            
+                <a href="design-configuration-system.html">
+            
+                    
+                    Design Configuration System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.3" data-path="layout-XML-in-themes.html">
+            
+                <a href="layout-XML-in-themes.html">
+            
+                    
+                    Layout XML in Themes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Layout XML in Themes</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="3-layout-xml-in-themes-18">3. Layout XML in Themes (18%)</h1>
+<h2 id="31-demonstrate-knowledge-of-all-layout-xml-directives-and-their-arguments">3.1 DEMONSTRATE KNOWLEDGE OF ALL LAYOUT XML DIRECTIVES AND THEIR ARGUMENTS</h2>
+<p>Layout instructions make modifications to <code>&lt;block/&gt;</code> and <code>&lt;container/&gt;</code>, the building blocks of XML elements</p>
+<ul>
+<li><p>What layout XML elements exist and what is their purpose?</p>
+<ul>
+<li><p><code>Block</code></p>
+<p>  A block is a link between a PHP block class, which contains logic and a template which renders content such as text or ui element.</p>
+<ul>
+<li>Magento recommends against specifying a class as it defaults to <code>\Magento\Framework\View\Element\Template</code></li>
+<li>Blocks can have child and grandchildren nodes and so on</li>
+<li><code>&lt;Arguments/&gt;</code> child nodes pass information from layout XML into block</li>
+<li><p><strong>Attributes</strong></p>
+<p>  <code>class</code>: name of class that &apos;s responsible for rendering block output</p>
+<p>  <code>name</code>: unique name given to block by developer</p>
+<p>  <code>before</code>:  position block before an element inside same parent node by stating block name you would like to precede.  If you want to precede all blocks in parent node, use &quot;-&quot;</p>
+<p>  <code>after</code>: position block after an element inside same parent node by stating block name you would like to precede.  If you want to succeed all blocks in parent node, use &quot;-&quot;</p>
+<p>  <code>template</code>: template assigned to block, provides block markup. ** Always use Magento module path notation</p>
+<pre><code>  &lt;!--Magento module path notation. Example: --&gt;
+  SwiftOtter_Hero::hero.phtml
+
+  &lt;!-- 
+      SwiftOtter_Hero = Module name
+      hero.phtml = template name
+  --&gt;
+</code></pre><p>  <code>as</code>: alias for identifier</p>
+<p>  <code>cacheable</code>: Defines whether a block element is cacheable.</p>
+</li>
+</ul>
+</li>
+<li><p><code>ReferenceBlock</code></p>
+<p>  These can be referenced  throughout layout</p>
+<p>  Example of Reference Container</p>
+<pre><code>  // Example of ReferenceBlock being used to remove the block named from the layout
+  &lt;referenceBlock name=&quot;product.info.sku&quot; remove=&quot;true&quot;/&gt;
+</code></pre><p>  <code>remove</code> Removes block from layout</p>
+<p>  <code>display=false</code> Prevents display of block but loads associated PHP classes</p>
+</li>
+<li><p><code>Container</code></p>
+<p>  If you look in the root layout XML file you will see that a <code>&lt;container/&gt;</code> is the top most element.</p>
+<p>  Structural element that holds other layout elements such as blocks and containers.</p>
+<p>  Containers are helpful in providing a more extensible means of grouping and rendering child blocks because the HTML tag and class can be specified in XML.</p>
+<pre><code>  &lt;container name=&quot;div.sidebar.additional&quot; htmlTag=&quot;div&quot; htmlClass=&quot;sidebar sidebar-additional&quot; after=&quot;div.sidebar.main&quot;&gt;
+      &lt;container name=&quot;sidebar.additional&quot; as=&quot;sidebar_additional&quot; label=&quot;Sidebar Additional&quot;/&gt;
+  &lt;/container&gt;
+</code></pre><ul>
+<li><p>Attributes:</p>
+<p>  <code>name</code>: name of container</p>
+<p>  <code>label</code>: name to display in web browser</p>
+<p>  <code>htmlTag</code>: a tag to wrap the child block output. Required if htmlClass is speci ed.</p>
+<p>  <code>htmlClass</code>: the class(es) to apply to the wrapper HTML tag.</p>
+<p>  <code>before</code>:  position container before an element inside same parent node by stating block name you would like to precede.  If you want to <strong><em>precede</em></strong> all containers in parent node, use &quot;-&quot;</p>
+<p>  <code>after</code>: position container after an element inside same parent node by stating block name you would like to precede.  If you want to <strong><em>succeed</em></strong> all containers in parent node, use &quot;-&quot;</p>
+<p>  <code>as</code>: alias for identifier</p>
+<p>  <code>output</code>: NEED TO UNDERSTAND THIS ONE BETTER</p>
+<p>  ** Containers don&#x2019;t allow for <arguments>.</arguments></p>
+</li>
+</ul>
+</li>
+<li><p><code>ReferenceContainer</code></p>
+<p>  These can be referenced  throughout layout</p>
+<p>  Example of Reference Container</p>
+<pre><code>  // Example of Reference Container: This adds a block to the product.info.type container
+
+  &lt;referenceContainer name=&quot;product.info.type&quot;&gt;
+          &lt;block name=&quot;additional.product.details&quot; template=&quot;SwiftOtter::product.details.phtml&quot;&gt;
+          &lt;/block&gt;
+  &lt;/referenceContainer&gt;
+</code></pre></li>
+<li><p><code>Action</code> &#x2014; Depreciated. (Use <code>&lt;Argument&gt;</code> )</p>
+</li>
+<li><p><code>Move</code> (processed before remove)</p>
+<p>  Sets the declared block or container element as a child of another element in the specified order</p>
+<p>  Attributes</p>
+<p>  <code>element</code>: block or container to move</p>
+<p>  <code>destination</code>: parent destination to be moved to</p>
+<p>  <code>as</code>: Alias name for the element in the new location.</p>
+<p>  <code>before</code> <code>after</code>: Specifies the element&#x2019;s position relative to siblings.</p>
+</li>
+<li><p><code>Remove</code></p>
+<pre><code>  &lt;remove src=&quot;Magento_Catalog::js/compare.js&quot; /&gt;
+</code></pre></li>
+</ul>
+</li>
+<li><p>What are some important layout instructions?</p>
+<ul>
+<li><p><code>&lt;update handle/&gt;</code></p>
+<p>  Includes instructions from another layout handle...need to work on this one</p>
+<p><code>&lt;move/&gt;</code></p>
+<p><code>remove</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="32-describe-page-layouts-and-their-inheritance--i-should-try-to-do-this-myself-to-get-a-better-feel">3.2 DESCRIBE PAGE LAYOUTS AND THEIR INHERITANCE ( I should try to do this myself to get a better feel)</h2>
+<ul>
+<li>Page layouts only contain containers unlike page configuration which contains blocks and containers.</li>
+<li><p>What is the purpose of page layouts?</p>
+<p>  The purpose of page layouts is to create a structured and common set of layout instructions to render pages</p>
+</li>
+<li><p>How can a custom page layout be created?</p>
+<p>  Create Custom Layout: </p>
+<p>  See this to create module to add custom layout:</p>
+<p>  <a href="https://www.mageplaza.com/kb/how-create-hello-world-module-magento-2.html" target="_blank">How to Create Module in Magento 2</a></p>
+<p>  See this to create custom layout:</p>
+<p>  <a href="https://webkul.com/blog/how-to-create-custom-layout-page/" target="_blank">How to create custom layout page in magento2</a></p>
+<ol>
+<li>Register custom layout in Namespace/Module/view/frontend/layouts.xml.  We&apos;re basically adding a <code>layout</code> to <code>page_layouts</code></li>
+<li>Create layout page in Namespace/Module/view/frontend/page_layout/test.xml and then designing the new layout in the <code>page_layout</code> directory</li>
+</ol>
+</li>
+<li><p>Where are the existing page layouts used?</p>
+<p>  These can be customized in the admin panel on products, categories, &amp;  CMS pages</p>
+</li>
+<li><p>How can the root page layout be specified for all pages and for specific pages?</p>
+<ul>
+<li>For all pages: Set the layout parameter on the <code>&lt;page /&gt;</code> node to the ID of a layout specified in on of the <code>page_layout</code>XML files.</li>
+<li>Specific pages can be target using the layout XML&apos;s filename</li>
+</ul>
+</li>
+</ul>
+<h2 id="33-demonstrate-understanding-of-layout-handles-and-corresponding-files">3.3 DEMONSTRATE UNDERSTANDING OF LAYOUT HANDLES AND CORRESPONDING FILES</h2>
+<p><code>layout handle</code>:  a string that associates a layout XML file with a specific page or group of pages, to connect layout XML instructions with a controller.</p>
+<ul>
+<li><p><strong>Examples of layout handle for Customer Account Page</strong></p>
+<p>  <code>customer_account_index</code> layout handle </p>
+<p>  <code>customer-account-index</code> body class</p>
+<p>  <strong>Layout handle determined by</strong></p>
+<p>  <code>**customer**</code> Route ID in <code>magento2/app/code/Magento/Customer/etc/frontend/routes.xml</code> </p>
+<p>  <code>**account**</code> Controller Directory</p>
+<p>  <code>magento2/app/code/Magento/Customer/Controller/Account/</code></p>
+<p>  <code>**index**</code>: Controller&apos;s action</p>
+<p>  <code>magento2/app/code/Magento/Customer/Controller/Account/Index.php</code></p>
+<p>  This maps to a layout file in Module/Layout i.e.  <code>vendor/magento/module-customer/view/frontend/layout/customer_account_index.xml</code></p>
+<p>  or for our custom themes <code>&lt;Theme&gt;/Magento_Customer/layout</code> or</p>
+</li>
+<li><p>How can the available layout handles for a given page be determined?</p>
+<ul>
+<li>the quickest method is to look at the body class and replace <code>-</code> with <code>_</code></li>
+<li><p>Another way is to add this to the template being rendered to page in question</p>
+<pre><code>  &lt;?php var_dump($block- &gt;getLayout()-&gt;getUpdate()-&gt;getHandles()) ?&gt;
+</code></pre></li>
+</ul>
+</li>
+<li><p>How do you add a new layout handle?</p>
+<p>  Add to layout instruction: <code>&lt;update handle=&quot;new_handle_name&quot;/&gt;</code></p>
+</li>
+<li><p>What is the purpose of layout handles?</p>
+<ul>
+<li>To connect layout XML instructions with a controller.</li>
+</ul>
+</li>
+<li><p>What are the most commonly used layout handles?</p>
+<p>  &#x2022; default
+  &#x2022; cms_index_index
+  &#x2022; cms_page_view
+  &#x2022; cms_index_index
+  &#x2022; cms_index_index_id_home &#x2022; 1column
+  &#x2022; catalog_product_prices</p>
+<p>  &#x2022; default
+  &#x2022; catalog_product_view</p>
+<p>  &#x2022; catalog_product_view_type_simple
+  &#x2022; catalog_product_view_id_16
+  &#x2022; catalog_product_view_sku_24-UG07
+  &#x2022; 1column
+  &#x2022; catalog_product_prices</p>
+</li>
+<li><p>How can layout handles be used during theme customization?</p>
+</li>
+</ul>
+<h2 id="34-understand-the-differences-between-containers-and-blocks">3.4 UNDERSTAND THE DIFFERENCES BETWEEN CONTAINERS AND BLOCKS</h2>
+<ul>
+<li>What is the purpose of blocks? What is the purpose of containers?<ul>
+<li>Containers contain blocks and can wrap with HTML tag and class</li>
+<li>Containers won&apos;t render if they have no children</li>
+<li>Blocks are the lowest on the chain in rendering HTML</li>
+</ul>
+</li>
+<li>How can containers be used in theming?<ul>
+<li>Eliminates useless HTML from PHTML files and allows the ability to wrap the blocks in the same place they are called.</li>
+</ul>
+</li>
+<li><p>How can blocks be used in theming?</p>
+<p>  Blocks handle all static-HTML rendering that containers do not handle.</p>
+</li>
+<li><p>What is the default block type?</p>
+<p>  <code>\Magento\Framework\View\Element\Template</code></p>
+</li>
+<li><p>How can the order of rendered child blocks be infuenced both in containers and in blocks?</p>
+<p>  <code>before</code> and <code>after</code> attribures</p>
+</li>
+</ul>
+<h2 id="35-describe-layout-xml-override-technique">3.5 DESCRIBE LAYOUT XML OVERRIDE TECHNIQUE</h2>
+<ul>
+<li>XML files that are directly placed in the layout directory are merged, while XML files that are placed in the appropriate subdirectory of override replace the original file.</li>
+<li><p>How can layout XML be overridden? This question is in practice test and I missed initially because we rarely use</p>
+<p>  Not ideal to override layout XML, but if needed to erase existing Magento layout, create a new XML file in</p>
+<p>  <code>app/design/&lt;theme&gt;/Magento_&lt;module&gt;/layout/override/frontend/&lt;layout_handle&gt;.xml</code></p>
+<p>  i.e. <code>app/design/ SwiftOtter/Flex/Magento_Catalog/layout/override/frontend/ catalog_product_view.xml.</code></p>
+</li>
+<li><p>How can layout overriding be used in theming?</p>
+<ul>
+<li>Not Common: If an existing layout file contains an instruction that you cannot change by extending, then overriding that layout file might be the only recourse.</li>
+</ul>
+</li>
+<li>What are consequences of layout overrides during upgrades?<ul>
+<li>If the original layout file is changed during upgrade, because this method overrides and doesn&apos;t merge the layout files, these changes won&apos;t be include and other modules that depend on them would not have access.</li>
+</ul>
+</li>
+<li>What is the effect of layout overrides on compatibility?<ul>
+<li>Overriding layout files circumvent any changes in core files and increase chances of trouble during upgrades.</li>
+</ul>
+</li>
+</ul>
+<h2 id="36-understand-layout-merging">3.6 UNDERSTAND LAYOUT MERGING</h2>
+<ul>
+<li>What is layout merging?<ul>
+<li>Layout merging is the process of assembling all of the layout XML files into one large XML document.</li>
+<li>When rendering page, Magento locates the layout instructions for  the particular handle and merges them together.</li>
+<li>Then Magento traverses document and creates PHP classes for each block and renders output</li>
+<li>Layout is merged in order the modules are loaded and if there are conflicts, the last module loaded wins.</li>
+</ul>
+</li>
+<li><p>How do design areas influence merging?</p>
+<ul>
+<li><p>Layout XML instructions are rst merged in the base area and then by the area that applies to the current request (frontend or adminhtml).</p>
+</li>
+<li><p>Module base files loaded</p>
+</li>
+<li><p>Module area files loaded (frontend or adminhtml)</p>
+</li>
+<li><p>Sorted according to their module priority (array index of module&#x2019;s position in app/etc/config.php) or if priority is equal, by alphabetical priority</p>
+</li>
+<li><p>Theme files (layout and then override layout files) from furthest ancestor to current theme. i.e. (Magento &gt;  BryantPark &gt; Client Theme)</p>
+</li>
+</ul>
+</li>
+<li><p>How can merging remove elements added earlier?</p>
+<ul>
+<li>use <code>remove</code> attribute in theme layout</li>
+</ul>
+</li>
+<li><p>What are additive changes and what are overriding changes during layout merging?</p>
+<p>  Need to add content here</p>
+</li>
+</ul>
+<h2 id="37-understand-processing-order-of-layout-handles-and-other-directives">3.7 UNDERSTAND PROCESSING ORDER OF LAYOUT HANDLES AND OTHER DIRECTIVES</h2>
+<ul>
+<li>In what order are layout handles processed?</li>
+<li>In what order is layout XML merged within the same handle?</li>
+<li>How can the processing order be influenced?</li>
+<li>What are common problems arising from the merge order of layout declarations?</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="design-configuration-system.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Design Configuration System">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Layout XML in Themes","level":"1.3.2.3","depth":3,"previous":{"title":"Design Configuration System","level":"1.3.2.2","depth":3,"path":"magento/frontend-cert/design-configuration-system.md","ref":"magento/frontend-cert/design-configuration-system.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"magento/frontend-cert/layout-XML-in-themes.md","mtime":"2019-01-17T17:33:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-17T17:59:15.403Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
