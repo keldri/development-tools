@@ -1,5 +1,6 @@
 #Common Magento Commands
 
+* [Migrations](migrations.md)
 * [Admin User Create](admin-user-create.md)
 * [All Magento Cli Command](all-magento-cli-commands)
 * [Apache PHP FPM command](apache-commands)
