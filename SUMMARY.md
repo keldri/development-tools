@@ -16,7 +16,7 @@
         * [Design Configuration System](magento/frontend-cert/design-configuration-system.md)
         * [Layout XML in Themes](magento/frontend-cert/layout-XML-in-themes.md)
     * [Magento Commands](magento/magento-commands/README.md)
-        * [Migrations](magento-commands/migrations.md)
+        * [Migrations](magento/magento-commands/migrations.md)
         * [Admin User Create](magento/magento-commands/admin-user-create.md)
         * [All Magento Cli Command](magento/magento-commands/all-magento-cli-commands.md)
         * [Apache PHP FPM command](magento/magento-commands/apache-commands.md)

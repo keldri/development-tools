@@ -2,8 +2,8 @@
 
 * [Migrations](migrations.md)
 * [Admin User Create](admin-user-create.md)
-* [All Magento Cli Command](all-magento-cli-commands)
-* [Apache PHP FPM command](apache-commands)
+* [All Magento Cli Command](all-magento-cli-commands.md)
+* [Apache PHP FPM command](apache-commands.md)
 * [App config import](app-config-import.md)
 * [Command](commands.md)
 * [Magento](magento.md)
